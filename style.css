@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #222;
+}
+
+.card {
+    width: 470px;
+    height: 500px;
+
+    /* background: linear-gradient(135deg , #00feba , #5b548a); */
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+
+
+    position: absolute;
+    left: 35%;
+    bottom: 10%;
+    text-align: center;
+    border-radius: 30px;
+
+}
+
+
+.card .search {
+    display: flex;
+    justify-content: space-between;
+    margin: 1px;
+    margin-left: 10px;
+    margin-top: 5px;
+    align-items: center;
+}
+
+.card .search input {
+
+    width: 80%;
+    border: none;
+    outline: none;
+    padding: 12px;
+    border-radius: 30px;
+    margin-top: 30px;
+    margin-left: 15px;
+    font-size: 18px;
+
+}
+
+.card .search button {
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 52px;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-right: 20px;
+}
+
+.search button:hover {
+    transform: scale(1.1);
+}
+
+.card .search button img {
+    width: 20px;
+    height: 25px;
+}
+
+.card .weather img {
+    width: 180px;
+    height: 140px;
+
+}
+
+.card .weather .temp {
+    color: white;
+}
+
+.card .weather .city {
+    color: white;
+    margin-top: 10px;
+}
+
+.card .weather .details {
+    color: white;
+    display: flex;
+    gap: 260px;
+    margin: 80px;
+    margin-right: 20px;
+    position: relative;
+    right: 40px;
+    bottom: 20px;
+}
+
+.card .weather .details .col img {
+    width: 60px;
+    height: 60px;
+    position: relative;
+    right: 10px;
+}
+
+.card .weather .details .dol img {
+    width: 60px;
+    height: 60px;
+    position: relative;
+    right: 125px;
+}
+
+.card .weather .details .col p {
+    position: relative;
+    left: 65px;
+    bottom: 70px;
+
+}
+
+.card .weather .details .col .humidity {
+    font-size: 30px;
+}
+
+.card .weather .details .dol .wind {
+    font-size: 25px;
+}
+
+.card .weather .details .dol p {
+    position: relative;
+    bottom: 60px;
+    right: 25px;
+
+}
+
+.weather {
+    display: none;
+}
